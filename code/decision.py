@@ -104,7 +104,7 @@ def decision_step(Rover):
 
         steer = np.mean(Rover.nav_angles * 180 / np.pi)
         if navigable_space_right > Rover.stop_forward * 2:
-            steer -= 5
+            steer -= 3
         Rover.steer = np.clip(steer, -15, 15)
 
     elif Rover.mode == 'rotate_left':# or Rover.mode == 'rotate_sample':

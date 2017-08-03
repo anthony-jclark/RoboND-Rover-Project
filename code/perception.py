@@ -103,7 +103,7 @@ def perception_step(Rover):
     navigable_terrain = color_thresh(warped)
     # obstacles = -(navigable_terrain - 1)
     obstacles = color_thresh(warped, rgb_thresh_min=(0, 0, 0), rgb_thresh_max=(120, 120, 120))
-    rock_samples = color_thresh(warped, rgb_thresh_min=(100, 100, 0), rgb_thresh_max=(255,255,80))
+    rock_samples = color_thresh(warped, rgb_thresh_min=(100, 100, 0), rgb_thresh_max=(255,255,50))
 
     # 4) Update Rover.vision_image (this will be displayed on left side of screen)
     Rover.vision_image[:,:,2] = navigable_terrain * 255
