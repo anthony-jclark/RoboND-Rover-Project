@@ -200,3 +200,5 @@ Depending on the settings in my perception and decision steps I can get varying 
 Additionally, I added states to the decision tree for identifying, navigating toward, and picking up rock samples. These can be found in `decision.py`, but to summarize: if I detect a sample while in the forward or rotating states I go to the `goto_sample` state. In this state, I slowly approach the rock sample, stop when close, and then pick it up if possible. Below is a screen-shot from [this movie in which the rover picks up five samples](https://youtu.be/WeONxQc-qHM).
 
 ![Five Samples](./five_samples.jpg)
+
+Although time has not permitted, in the future I would spend a greater amount of time working on the wall-hugging feature. It does not work well, and in general causes a jerkiness that lowers the map fidelity. It seems that I had to sacrifice either map fidelity or sample collection with no good reason.
