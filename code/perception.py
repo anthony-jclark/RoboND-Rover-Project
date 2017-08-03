@@ -125,7 +125,7 @@ def perception_step(Rover):
                                             Rover.yaw, Rover.worldmap.shape[0], world_scale)
 
     # 7) Update Rover worldmap (to be displayed on right side of screen)
-    update_strength = 2
+    update_strength = 1
     Rover.worldmap[nav_y_world, nav_x_world, 2] += update_strength
     Rover.worldmap[obs_y_world, obs_x_world, 0] += update_strength
     Rover.worldmap[roc_y_world, roc_x_world, 1] += update_strength
